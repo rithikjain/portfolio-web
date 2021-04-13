@@ -2,7 +2,7 @@ import Header from './components/Common/Header'
 
 function App() {
   return (
-    <div>
+    <div className="font-sans">
       <Header />
     </div>
   );
