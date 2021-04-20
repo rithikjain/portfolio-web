@@ -1,8 +1,11 @@
 import Header from "./components/Common/Header";
 import PageDescription from "./components/Common/PageDescription";
-import Content from "./components/Common/Content";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Work from "./pages/Work";
+import Tech from "./pages/Tech";
 
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -11,7 +14,24 @@ function App() {
         <Header />
         <div className="flex flex-1">
           <PageDescription />
-          <Content />
+
+          {/* Pages */}
+          <div className="flex-1">
+            <Switch>
+              <Route path="/projects">
+                <Projects />
+              </Route>
+              <Route path="/work">
+                <Work />
+              </Route>
+              <Route path="/tech">
+                <Tech />
+              </Route>
+              <Route path="/">
+                <About />
+              </Route>
+            </Switch>
+          </div>
 
           {/* Page Selector */}
           <div className="w-28 flex flex-col justify-center">
