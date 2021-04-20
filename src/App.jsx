@@ -6,8 +6,14 @@ import Work from "./pages/Work";
 import Tech from "./pages/Tech";
 
 import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
+import { useState } from "react";
 
 function App() {
+  const [pageNo, setPageNo] = useState(0);
+
+  const selectedCSS = "bg-black w-9 h-1 my-4 mx-4";
+  const deSelectedCSS = "bg-gray-400 w-5 h-0.5 my-4 mx-4";
+
   return (
     <Router>
       <div className="flex-col flex h-screen">
@@ -35,24 +41,24 @@ function App() {
 
           {/* Page Selector */}
           <div className="w-28 flex flex-col justify-center">
-            <div className="bg-black w-9 h-1 my-4 mx-4">
-              <Link to="/">
-                <div className="w-9 h-2"></div>
+            <div className={pageNo === 0 ? selectedCSS : deSelectedCSS}>
+              <Link to="/" onClick={() => setPageNo(0)}>
+                <div className="w-full h-2"></div>
               </Link>
             </div>
-            <div className="bg-gray-400 w-5 h-0.5 my-4 mx-4">
-              <Link to="/projects">
-                <div className="w-5 h-2"></div>
+            <div className={pageNo === 1 ? selectedCSS : deSelectedCSS}>
+              <Link to="/projects" onClick={() => setPageNo(1)}>
+                <div className="w-full h-2"></div>
               </Link>
             </div>
-            <div className="bg-gray-400 w-5 h-0.5 my-4 mx-4">
-              <Link to="/work">
-                <div className="w-5 h-2"></div>
+            <div className={pageNo === 2 ? selectedCSS : deSelectedCSS}>
+              <Link to="/work" onClick={() => setPageNo(2)}>
+                <div className="w-full h-2"></div>
               </Link>
             </div>
-            <div className="bg-gray-400 w-5 h-0.5 my-4 mx-4">
-              <Link to="/tech">
-                <div className="w-5 h-2"></div>
+            <div className={pageNo === 3 ? selectedCSS : deSelectedCSS}>
+              <Link to="/tech" onClick={() => setPageNo(3)}>
+                <div className="w-full h-2"></div>
               </Link>
             </div>
           </div>
