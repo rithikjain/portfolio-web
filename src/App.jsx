@@ -21,23 +21,15 @@ function App() {
       <div className="flex-col flex h-screen">
         <Header />
         <div className="flex flex-1">
-          <PageDescription pageNo={pageNo+1} pageTitle={pagesTitle[pageNo]} />
+          <PageDescription pageNo={pageNo + 1} pageTitle={pagesTitle[pageNo]} />
 
           {/* Pages */}
           <div className="flex-1">
             <Switch>
-              <Route path="/projects">
-                <Projects />
-              </Route>
-              <Route path="/work">
-                <Work />
-              </Route>
-              <Route path="/tech">
-                <Tech />
-              </Route>
-              <Route path="/">
-                <About />
-              </Route>
+              <Route path="/projects" component={Projects} />
+              <Route path="/work" component={Work} />
+              <Route path="/tech" component={Tech} />
+              <Route path="/" component={About} />
             </Switch>
           </div>
 
