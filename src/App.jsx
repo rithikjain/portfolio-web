@@ -1,10 +1,8 @@
-import Header from './components/Common/Header'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import Header from "./components/Common/Header";
+import PageDescription from "./components/Common/PageDescription";
+import Content from "./components/Common/Content";
+
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 function App() {
   return (
@@ -12,22 +10,31 @@ function App() {
       <div className="flex-col flex h-screen">
         <Header />
         <div className="flex flex-1">
-          {/* Page Description */}
-          <div className="w-56 flex flex-col justify-center items-center">
-            <span className="font-serif font-bold text-7xl">01</span>
-            <div className="bg-black w-1 h-32 my-8"></div>
-            <p className="font-bold transform -rotate-90 my-8">ABOUT ME</p>
-          </div>
-
-          {/* Content */}
-          <div className="flex-1"></div>
+          <PageDescription />
+          <Content />
 
           {/* Page Selector */}
           <div className="w-28 flex flex-col justify-center">
-            <div className="bg-black w-9 h-1 my-4 mx-4"></div>
-            <div className="bg-gray-600 w-5 h-0.5 my-4 mx-4"></div>
-            <div className="bg-gray-600 w-5 h-0.5 my-4 mx-4"></div>
-            <div className="bg-gray-600 w-5 h-0.5 my-4 mx-4"></div>
+            <div className="bg-black w-9 h-1 my-4 mx-4">
+              <Link to="/">
+                <div className="w-9 h-2"></div>
+              </Link>
+            </div>
+            <div className="bg-gray-400 w-5 h-0.5 my-4 mx-4">
+              <Link to="/projects">
+                <div className="w-5 h-2"></div>
+              </Link>
+            </div>
+            <div className="bg-gray-400 w-5 h-0.5 my-4 mx-4">
+              <Link to="/work">
+                <div className="w-5 h-2"></div>
+              </Link>
+            </div>
+            <div className="bg-gray-400 w-5 h-0.5 my-4 mx-4">
+              <Link to="/tech">
+                <div className="w-5 h-2"></div>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
