@@ -14,12 +14,14 @@ function App() {
   const selectedCSS = "bg-black w-9 h-1 my-4 mx-4";
   const deSelectedCSS = "bg-gray-400 w-5 h-0.5 my-4 mx-4";
 
+  const pagesTitle = ["ABOUT ME", "MY PROJECTS", "WORK", "TECH STACK"];
+
   return (
     <Router>
       <div className="flex-col flex h-screen">
         <Header />
         <div className="flex flex-1">
-          <PageDescription />
+          <PageDescription pageNo={pageNo+1} pageTitle={pagesTitle[pageNo]} />
 
           {/* Pages */}
           <div className="flex-1">
