@@ -34,26 +34,28 @@ function App() {
           </div>
 
           {/* Page Selector */}
-          <div className="w-28 flex flex-col justify-center">
-            <div className={pageNo === 0 ? selectedCSS : deSelectedCSS}>
-              <Link to="/" onClick={() => setPageNo(0)}>
-                <div className="w-full h-2"></div>
-              </Link>
-            </div>
-            <div className={pageNo === 1 ? selectedCSS : deSelectedCSS}>
-              <Link to="/projects" onClick={() => setPageNo(1)}>
-                <div className="w-full h-2"></div>
-              </Link>
-            </div>
-            <div className={pageNo === 2 ? selectedCSS : deSelectedCSS}>
-              <Link to="/work" onClick={() => setPageNo(2)}>
-                <div className="w-full h-2"></div>
-              </Link>
-            </div>
-            <div className={pageNo === 3 ? selectedCSS : deSelectedCSS}>
-              <Link to="/tech" onClick={() => setPageNo(3)}>
-                <div className="w-full h-2"></div>
-              </Link>
+          <div className="w-44 flex flex-col justify-center items-center">
+            <div className="flex flex-col">
+              <div className={pageNo === 0 ? selectedCSS : deSelectedCSS}>
+                <Link to="/" onClick={() => setPageNo(0)}>
+                  <div className="w-full h-2"></div>
+                </Link>
+              </div>
+              <div className={pageNo === 1 ? selectedCSS : deSelectedCSS}>
+                <Link to="/projects" onClick={() => setPageNo(1)}>
+                  <div className="w-full h-2"></div>
+                </Link>
+              </div>
+              <div className={pageNo === 2 ? selectedCSS : deSelectedCSS}>
+                <Link to="/work" onClick={() => setPageNo(2)}>
+                  <div className="w-full h-2"></div>
+                </Link>
+              </div>
+              <div className={pageNo === 3 ? selectedCSS : deSelectedCSS}>
+                <Link to="/tech" onClick={() => setPageNo(3)}>
+                  <div className="w-full h-2"></div>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
