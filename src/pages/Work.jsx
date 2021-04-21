@@ -72,17 +72,6 @@ const Work = () => {
           );
         })}
 
-        {/*
-        <div key={currentPage} className="w-full card active">
-          <WorkCard
-            company={workList[currentPage].company}
-            position={workList[currentPage].position}
-            duration={workList[currentPage].duration}
-            info1={workList[currentPage].info1}
-            info2={workList[currentPage].info2}
-          />
-        </div>
-        */}
         <IoIosArrowForward
           size="50"
           className="cursor-pointer mb-16"
