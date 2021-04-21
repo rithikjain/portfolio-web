@@ -34,7 +34,7 @@ function App() {
           </div>
 
           {/* Page Selector */}
-          <div className="w-44 flex flex-col justify-center items-center">
+          <div className="w-44 flex flex-col justify-center items-center mb-16">
             <div className="flex flex-col">
               <div className={pageNo === 0 ? selectedCSS : deSelectedCSS}>
                 <Link to="/" onClick={() => setPageNo(0)}>

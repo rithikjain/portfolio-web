@@ -1,33 +1,93 @@
-import React from "react";
+import React, { useState } from "react";
+import WorkCard from "../components/WorkCard";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Work = () => {
+  const workList = [
+    {
+      company: "Winuall",
+      position: "Android Developer Intern",
+      duration: "Jul 2020 - Aug 2020",
+      info1:
+        "Winuall is a startup based out of Bangalore. It specialises in helping coaching centers go digital.",
+      info2:
+        "Worked on some Android thing and blah blah blah was fun and learnt a lot!",
+    },
+    {
+      company: "XYZ",
+      position: "GoLang",
+      duration: "Jul 2020 - Aug 2020",
+      info1:
+        "Winuall is a startup based out of Bangalore. It specialises in helping coaching centers go digital.",
+      info2:
+        "Worked on some Android thing and blah blah blah was fun and learnt a lot!",
+    },
+    {
+      company: "ABC",
+      position: "Kotlin",
+      duration: "Jul 2020 - Aug 2020",
+      info1:
+        "Winuall is a startup based out of Bangalore. It specialises in helping coaching centers go digital.",
+      info2:
+        "Worked on some Android thing and blah blah blah was fun and learnt a lot!",
+    },
+  ];
+
+  const [currentPage, setCurrentPage] = useState(0);
+  const length = workList.length;
+
+  const nextPage = () => {
+    setCurrentPage(currentPage === length - 1 ? 0 : currentPage + 1);
+  };
+
+  const prevPage = () => {
+    setCurrentPage(currentPage === 0 ? length - 1 : currentPage - 1);
+  };
+
   return (
     <div className="flex h-full items-center justify-center">
       <div className="h-3/4 w-10/12 flex items-center">
-        <IoIosArrowBack size="50" className="cursor-pointer" />
-        <div className="flex-1 h-full flex flex-col items-center justify-center mb-16">
-          <div className="w-7/12 flex flex-col">
-            <h1 className="font-bold text-5xl">Winuall</h1>
-            <p className="ml-2 mt-4 text-lg text-gray-500 font-medium">
-              Android Developer Intern
-            </p>
-            <p className="ml-2 text-gray-500 font-medium">
-              Jul 2020 - Aug 2020
-            </p>
-            <ul className="list-disc mt-20 ml-6 text-lg">
-              <li>
-                Winuall is a startup based out of Bangalore. It specialises in
-                helping coaching centers go digital.
-              </li>
-              <li className="mt-4">
-                Worked on some Android thing and blah blah blah was fun and
-                learnt a lot!
-              </li>
-            </ul>
-          </div>
+        <IoIosArrowBack
+          size="50"
+          className="cursor-pointer mb-16"
+          onClick={prevPage}
+        />
+
+        {workList.map((work, index) => {
+          return (
+            <div
+              key={index}
+              className={index === currentPage ? "card active w-full" : "card"}
+            >
+              {index === currentPage && (
+                <WorkCard
+                  company={work.company}
+                  position={work.position}
+                  duration={work.duration}
+                  info1={work.info1}
+                  info2={work.info2}
+                />
+              )}
+            </div>
+          );
+        })}
+
+        {/*
+        <div key={currentPage} className="w-full card active">
+          <WorkCard
+            company={workList[currentPage].company}
+            position={workList[currentPage].position}
+            duration={workList[currentPage].duration}
+            info1={workList[currentPage].info1}
+            info2={workList[currentPage].info2}
+          />
         </div>
-        <IoIosArrowForward size="50" className="cursor-pointer" />
+        */}
+        <IoIosArrowForward
+          size="50"
+          className="cursor-pointer mb-16"
+          onClick={nextPage}
+        />
       </div>
     </div>
   );
