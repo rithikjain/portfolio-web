@@ -21,7 +21,7 @@ function App() {
       <div className="flex-col flex h-screen">
         <Header />
         <div className="flex flex-1">
-          <PageDescription pageNo={pageNo + 1} pageTitle={pagesTitle[pageNo]} />
+          <PageDescription pageNo={"0" + (pageNo + 1)} pageTitle={pagesTitle[pageNo]} />
 
           {/* Pages */}
           <div className="flex-1">
