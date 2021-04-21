@@ -1,9 +1,9 @@
 import React from "react";
-import email from "../../assets/email.svg";
-import linkedin from "../../assets/linkedin.svg";
-import telegram from "../../assets/telegram.svg";
-import github from "../../assets/github.svg";
-import menu from "../../assets/menu.svg";
+import email from "../assets/email.svg";
+import linkedin from "../assets/linkedin.svg";
+import telegram from "../assets/telegram.svg";
+import github from "../assets/github.svg";
+import menu from "../assets/menu.svg";
 
 const Header = () => {
   return (
