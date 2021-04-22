@@ -23,19 +23,19 @@ function App() {
     in: {
       opacity: 1,
       y: 0,
-      scale: 1
+      scale: 1,
     },
     out: {
       opacity: 0,
       y: "-100vh",
-      scale: 0.8
+      scale: 0.8,
     },
   };
 
   const pageTransition = {
     type: "tween",
     ease: "anticipate",
-    duration: 0.4
+    duration: 0.4,
   };
 
   return (
