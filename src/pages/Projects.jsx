@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ProjectCard from "../components/ProjectCard";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import spike from "../assets/spike.png";
 
 const Projects = ({ setPage }) => {
   useEffect(() => {
@@ -9,31 +10,20 @@ const Projects = ({ setPage }) => {
 
   const projectsList = [
     {
-      company: "Winuall",
-      position: "Android Developer Intern",
-      duration: "Jul 2020 - Aug 2020",
-      info1:
-        "Winuall is a startup based out of Bangalore. It specialises in helping coaching centers go digital.",
-      info2:
-        "Worked on some Android thing and blah blah blah was fun and learnt a lot!",
+      image: spike,
+      title: "Spike",
+      description:
+        "Spike is a Short Videos App built for artists and creators. Spike uses Spaces to help you find your people that Create and Consume the same content!",
+      github: "https://github.com/ProjectSpike/spike-app",
+      website: "https://spikeapp.in",
     },
     {
-      company: "XYZ",
-      position: "GoLang",
-      duration: "Jul 2020 - Aug 2020",
-      info1:
-        "Winuall is a startup based out of Bangalore. It specialises in helping coaching centers go digital.",
-      info2:
-        "Worked on some Android thing and blah blah blah was fun and learnt a lot!",
-    },
-    {
-      company: "ABC",
-      position: "Kotlin",
-      duration: "Jul 2020 - Aug 2020",
-      info1:
-        "Winuall is a startup based out of Bangalore. It specialises in helping coaching centers go digital.",
-      info2:
-        "Worked on some Android thing and blah blah blah was fun and learnt a lot!",
+      image: spike,
+      title: "Second Project",
+      description:
+        "This is the second project that I have worked on and yeah blah blah and more",
+      github: "https://github.com/ProjectSpike/spike-app",
+      website: "https://spikeapp.in",
     },
   ];
 
@@ -65,7 +55,15 @@ const Projects = ({ setPage }) => {
                 index === currentPage ? "card active w-full h-full" : "card"
               }
             >
-              {index === currentPage && <ProjectCard />}
+              {index === currentPage && (
+                <ProjectCard
+                  img={project.image}
+                  title={project.title}
+                  description={project.description}
+                  github={project.github}
+                  website={project.website}
+                />
+              )}
             </div>
           );
         })}
