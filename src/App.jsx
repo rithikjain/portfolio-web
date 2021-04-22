@@ -43,6 +43,7 @@ function App() {
       <Header />
       <div className="flex h-screen main">
         <PageDescription
+          key={pageNo}
           pageNo={"0" + (pageNo + 1)}
           pageTitle={pagesTitle[pageNo]}
         />
@@ -87,22 +88,22 @@ function App() {
         <div className="w-44 flex flex-col justify-center items-center mb-16">
           <div className="flex flex-col">
             <div className={pageNo === 0 ? selectedCSS : deSelectedCSS}>
-              <Link to="/">
+              <Link to="/" onClick={() => setPageNo(0)}>
                 <div className="w-full h-2"></div>
               </Link>
             </div>
             <div className={pageNo === 1 ? selectedCSS : deSelectedCSS}>
-              <Link to="/projects">
+              <Link to="/projects" onClick={() => setPageNo(1)}>
                 <div className="w-full h-2"></div>
               </Link>
             </div>
             <div className={pageNo === 2 ? selectedCSS : deSelectedCSS}>
-              <Link to="/work">
+              <Link to="/work" onClick={() => setPageNo(2)}>
                 <div className="w-full h-2"></div>
               </Link>
             </div>
             <div className={pageNo === 3 ? selectedCSS : deSelectedCSS}>
-              <Link to="/tech">
+              <Link to="/tech" onClick={() => setPageNo(3)}>
                 <div className="w-full h-2"></div>
               </Link>
             </div>
