@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ProjectCard from "../components/ProjectCard";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
-const Projects = () => {
+const Projects = ({ setPage }) => {
+  useEffect(() => {
+    setPage(1);
+  });
+
   const projectsList = [
     {
       company: "Winuall",
@@ -57,7 +61,9 @@ const Projects = () => {
           return (
             <div
               key={index}
-              className={index === currentPage ? "card active w-full h-full" : "card"}
+              className={
+                index === currentPage ? "card active w-full h-full" : "card"
+              }
             >
               {index === currentPage && <ProjectCard />}
             </div>

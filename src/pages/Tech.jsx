@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AiFillAndroid } from "react-icons/ai";
 import { RiFlutterFill } from "react-icons/ri";
 import { SiKotlin } from "react-icons/si";
 import { FaNodeJs, FaReact } from "react-icons/fa";
 import GoLang from "../assets/golang.svg";
- 
-const Tech = () => {
+
+const Tech = ({ setPage }) => {
+  useEffect(() => {
+    setPage(3);
+  });
+
   return (
     <div className="h-full flex items-center justify-center">
       <div className="w-8/12 gap-y-20 grid grid-cols-3 grid-rows-2 items-center">
@@ -28,7 +32,7 @@ const Tech = () => {
         {/* GoLang */}
         <div className="inline-flex flex-col items-center">
           <div className="bg-black w-36 h-36 rounded-full flex items-center justify-center">
-            <img src={GoLang} alt="GoLang" width="55%"/>
+            <img src={GoLang} alt="GoLang" width="55%" />
           </div>
           <span className="font-bold mt-2">GoLang</span>
         </div>

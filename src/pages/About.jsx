@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import phone from "../assets/phone.png";
 
-const About = () => {
+const About = ({ setPage }) => {
+  useEffect(() => {
+    setPage(0);
+  });
+
   return (
     <div className="h-full flex">
       <div className="flex-1 flex items-center justify-center">

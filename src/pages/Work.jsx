@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import WorkCard from "../components/WorkCard";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
-const Work = () => {
+const Work = ({ setPage }) => {
+  useEffect(() => {
+    setPage(2);
+  });
+
   const workList = [
     {
       company: "Winuall",

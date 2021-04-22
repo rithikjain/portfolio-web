@@ -21,15 +21,26 @@ function App() {
       <div className="flex-col flex h-screen">
         <Header />
         <div className="flex h-screen main">
-          <PageDescription pageNo={"0" + (pageNo + 1)} pageTitle={pagesTitle[pageNo]} />
+          <PageDescription
+            pageNo={"0" + (pageNo + 1)}
+            pageTitle={pagesTitle[pageNo]}
+          />
 
           {/* Pages */}
           <div className="flex-1">
             <Switch>
-              <Route path="/projects" component={Projects} />
-              <Route path="/work" component={Work} />
-              <Route path="/tech" component={Tech} />
-              <Route path="/" component={About} />
+              <Route path="/projects">
+                <Projects setPage={setPageNo} />
+              </Route>
+              <Route path="/work">
+                <Work setPage={setPageNo} />
+              </Route>
+              <Route path="/tech">
+                <Tech setPage={setPageNo} />
+              </Route>
+              <Route path="/">
+                <About setPage={setPageNo} />
+              </Route>
             </Switch>
           </div>
 
@@ -37,22 +48,22 @@ function App() {
           <div className="w-44 flex flex-col justify-center items-center mb-16">
             <div className="flex flex-col">
               <div className={pageNo === 0 ? selectedCSS : deSelectedCSS}>
-                <Link to="/" onClick={() => setPageNo(0)}>
+                <Link to="/">
                   <div className="w-full h-2"></div>
                 </Link>
               </div>
               <div className={pageNo === 1 ? selectedCSS : deSelectedCSS}>
-                <Link to="/projects" onClick={() => setPageNo(1)}>
+                <Link to="/projects">
                   <div className="w-full h-2"></div>
                 </Link>
               </div>
               <div className={pageNo === 2 ? selectedCSS : deSelectedCSS}>
-                <Link to="/work" onClick={() => setPageNo(2)}>
+                <Link to="/work">
                   <div className="w-full h-2"></div>
                 </Link>
               </div>
               <div className={pageNo === 3 ? selectedCSS : deSelectedCSS}>
-                <Link to="/tech" onClick={() => setPageNo(3)}>
+                <Link to="/tech">
                   <div className="w-full h-2"></div>
                 </Link>
               </div>
