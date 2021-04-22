@@ -6,7 +6,7 @@ import Work from "./pages/Work";
 import Tech from "./pages/Tech";
 import { AnimatePresence } from "framer-motion";
 
-import { Link, Switch, Route, useLocation } from "react-router-dom";
+import { Link, Switch, Route } from "react-router-dom";
 import { useState } from "react";
 
 function App() {
@@ -18,25 +18,23 @@ function App() {
 
   const pagesTitle = ["ABOUT ME", "PROJECTS", "WORK", "TECH STACK"];
 
-  const location = useLocation();
-
   const pageVariants = {
     in: {
       opacity: 1,
       y: 0,
-      scale: 1,
+      scale: 1
     },
     out: {
       opacity: 0,
       y: "-100vh",
-      scale: 1,
+      scale: 0.5
     },
   };
 
   const pageTransition = {
-    type: "tween",
-    ease: "anticipate",
-    duration: 0.4,
+    type: "spring",
+    velocity: 0.1,
+    damping: 12,
   };
 
   return (
@@ -52,7 +50,7 @@ function App() {
         {/* Pages */}
         <div className="flex-1">
           <AnimatePresence exitBeforeEnter>
-            <Switch location={location} key={location.pathname}>
+            <Switch>
               <Route path="/projects">
                 <Projects
                   setPage={setPageNo}

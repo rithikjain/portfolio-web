@@ -5,8 +5,8 @@ const PageDescription = ({ pageNo, pageTitle }) => {
   return (
     <motion.div
       className="w-44 flex flex-col justify-center items-center mb-8"
-      initial={{ opacity: 0, y: "-100vh", scale: 0.8 }}
-      animate={{ opacity: 1, y: 0, scale: 1 }}
+      initial={{ opacity: 0, scale: 0.2, y: "-100vh" }}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
       transition={{ type: "spring", velocity: 0.1, damping: 12 }}
     >
       <span className="font-serif font-bold text-7xl">{pageNo}</span>
