@@ -6,7 +6,7 @@ const About = () => {
     <div className="h-full flex">
       <div className="flex-1 flex items-center justify-center">
         <div className="ml-32 mb-24 w-2/3">
-          <h1 className="text-8xl font-bold tracking-widest">Hello</h1>
+          <h1 className="text-8xl font-bold tracking-wide">Hello</h1>
           <div className="bg-black h-1 w-24 ml-2 mt-2"></div>
           <p className="ml-2 mt-16 text-lg">
             Lorem Ipsum is simply dummy text of the printing and typesetting
