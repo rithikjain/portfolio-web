@@ -11,3 +11,9 @@
   transition-duration: 1s;
   transition: scale(1);
 }
+
+.main {
+  height: calc(100vh-96px);
+  overflow: hidden;
+  max-height: calc(100vh-96px);
+}

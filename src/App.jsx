@@ -20,7 +20,7 @@ function App() {
     <Router>
       <div className="flex-col flex h-screen">
         <Header />
-        <div className="flex flex-1">
+        <div className="flex h-screen main">
           <PageDescription pageNo={"0" + (pageNo + 1)} pageTitle={pagesTitle[pageNo]} />
 
           {/* Pages */}

@@ -8,7 +8,7 @@ import GoLang from "../assets/golang.svg";
 const Tech = () => {
   return (
     <div className="h-full flex items-center justify-center">
-      <div className="w-8/12 h-3/5 grid grid-cols-3 grid-rows-2 items-center">
+      <div className="w-8/12 gap-y-20 grid grid-cols-3 grid-rows-2 items-center">
         {/* Android */}
         <div className="inline-flex flex-col items-center">
           <div className="bg-black w-36 h-36 rounded-full flex items-center justify-center">
