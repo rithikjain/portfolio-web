@@ -29,7 +29,7 @@ function App() {
     out: {
       opacity: 0,
       y: "-100vh",
-      scale: 0.8,
+      scale: 1,
     },
   };
 

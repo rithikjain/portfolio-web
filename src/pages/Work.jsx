@@ -61,7 +61,7 @@ const Work = ({ setPage, pageVariants, pageTransition }) => {
       <div className="h-3/4 w-10/12 flex items-center">
         <IoIosArrowBack
           size="50"
-          className="cursor-pointer mb-16"
+          className="cursor-pointer mb-16 transition duration-400 ease-in-out transform hover:-translate-x-1 hover:scale-125"
           onClick={prevPage}
         />
 
@@ -86,7 +86,7 @@ const Work = ({ setPage, pageVariants, pageTransition }) => {
 
         <IoIosArrowForward
           size="50"
-          className="cursor-pointer mb-16"
+          className="cursor-pointer mb-16 transition duration-400 ease-in-out transform hover:translate-x-1 hover:scale-125"
           onClick={nextPage}
         />
       </div>

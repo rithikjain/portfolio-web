@@ -7,7 +7,7 @@ const PageDescription = ({ pageNo, pageTitle }) => {
       className="w-44 flex flex-col justify-center items-center mb-8"
       initial={{ opacity: 0, y: "-100vh", scale: 0.8 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
-      transition={{ type: "tween", ease: "anticipate", duration: 1 }}
+      transition={{ type: "spring", velocity: 0.1, damping: 12 }}
     >
       <span className="font-serif font-bold text-7xl">{pageNo}</span>
       <div className="bg-black w-1 h-32 my-12"></div>
