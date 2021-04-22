@@ -12,8 +12,9 @@ import { useState } from "react";
 function App() {
   const [pageNo, setPageNo] = useState(0);
 
-  const selectedCSS = "bg-black w-9 h-1 my-4 mx-4";
-  const deSelectedCSS = "bg-gray-400 w-5 h-0.5 my-4 mx-4";
+  const selectedCSS = "bg-black w-9 h-1 my-4 mx-4 cursor-default";
+  const deSelectedCSS =
+    "bg-gray-400 w-5 h-0.5 my-4 mx-4 transition duration-400 ease-in-out transform hover:translate-x-1 hover:scale-150";
 
   const pagesTitle = ["ABOUT ME", "PROJECTS", "WORK", "TECH STACK"];
 
@@ -88,22 +89,38 @@ function App() {
         <div className="w-44 flex flex-col justify-center items-center mb-16">
           <div className="flex flex-col">
             <div className={pageNo === 0 ? selectedCSS : deSelectedCSS}>
-              <Link to="/" onClick={() => setPageNo(0)}>
+              <Link
+                to="/"
+                className={pageNo === 0 && "cursor-default"}
+                onClick={() => setPageNo(0)}
+              >
                 <div className="w-full h-2"></div>
               </Link>
             </div>
             <div className={pageNo === 1 ? selectedCSS : deSelectedCSS}>
-              <Link to="/projects" onClick={() => setPageNo(1)}>
+              <Link
+                to="/projects"
+                className={pageNo === 1 && "cursor-default"}
+                onClick={() => setPageNo(1)}
+              >
                 <div className="w-full h-2"></div>
               </Link>
             </div>
             <div className={pageNo === 2 ? selectedCSS : deSelectedCSS}>
-              <Link to="/work" onClick={() => setPageNo(2)}>
+              <Link
+                to="/work"
+                className={pageNo === 2 && "cursor-default"}
+                onClick={() => setPageNo(2)}
+              >
                 <div className="w-full h-2"></div>
               </Link>
             </div>
             <div className={pageNo === 3 ? selectedCSS : deSelectedCSS}>
-              <Link to="/tech" onClick={() => setPageNo(3)}>
+              <Link
+                to="/tech"
+                className={pageNo === 3 && "cursor-default"}
+                onClick={() => setPageNo(3)}
+              >
                 <div className="w-full h-2"></div>
               </Link>
             </div>
