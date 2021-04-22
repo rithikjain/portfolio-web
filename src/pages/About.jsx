@@ -1,13 +1,21 @@
 import React, { useEffect } from "react";
 import phone from "../assets/phone.png";
+import { motion } from "framer-motion";
 
-const About = ({ setPage }) => {
+const About = ({ setPage, pageVariants, pageTransition }) => {
   useEffect(() => {
     setPage(0);
   });
 
   return (
-    <div className="h-full flex">
+    <motion.div
+      className="h-full flex"
+      exit="out"
+      initial="out"
+      animate="in"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
       <div className="flex-1 flex items-center justify-center">
         <div className="ml-32 mb-24 w-2/3">
           <h1 className="text-8xl font-bold tracking-wide">Hello</h1>
@@ -27,7 +35,7 @@ const About = ({ setPage }) => {
           <img src={phone} alt="PhoneImage" width="40%" />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

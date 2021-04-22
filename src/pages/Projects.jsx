@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import ProjectCard from "../components/ProjectCard";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import spike from "../assets/spike.png";
+import { motion } from "framer-motion";
 
-const Projects = ({ setPage }) => {
+const Projects = ({ setPage, pageVariants, pageTransition }) => {
   useEffect(() => {
     setPage(1);
   });
@@ -39,7 +40,14 @@ const Projects = ({ setPage }) => {
   };
 
   return (
-    <div className="flex h-full items-center justify-center">
+    <motion.div
+      className="flex h-full items-center justify-center"
+      exit="out"
+      initial="out"
+      animate="in"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
       <div className="h-3/4 w-10/12 flex items-center">
         <IoIosArrowBack
           size="50"
@@ -74,7 +82,7 @@ const Projects = ({ setPage }) => {
           onClick={nextPage}
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

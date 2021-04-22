@@ -4,14 +4,22 @@ import { RiFlutterFill } from "react-icons/ri";
 import { SiKotlin } from "react-icons/si";
 import { FaNodeJs, FaReact } from "react-icons/fa";
 import GoLang from "../assets/golang.svg";
+import { motion } from "framer-motion";
 
-const Tech = ({ setPage }) => {
+const Tech = ({ setPage, pageVariants, pageTransition }) => {
   useEffect(() => {
     setPage(3);
   });
 
   return (
-    <div className="h-full flex items-center justify-center">
+    <motion.div
+      className="h-full flex items-center justify-center"
+      exit="out"
+      initial="out"
+      animate="in"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
       <div className="w-8/12 gap-y-20 grid grid-cols-3 grid-rows-2 items-center">
         {/* Android */}
         <div className="inline-flex flex-col items-center">
@@ -61,7 +69,7 @@ const Tech = ({ setPage }) => {
           <span className="font-bold mt-2">React</span>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

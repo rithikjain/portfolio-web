@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import WorkCard from "../components/WorkCard";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { motion } from "framer-motion";
 
-const Work = ({ setPage }) => {
+const Work = ({ setPage, pageVariants, pageTransition }) => {
   useEffect(() => {
     setPage(2);
   });
@@ -49,7 +50,14 @@ const Work = ({ setPage }) => {
   };
 
   return (
-    <div className="flex h-full items-center justify-center">
+    <motion.div
+      className="flex h-full items-center justify-center"
+      exit="out"
+      initial="out"
+      animate="in"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
       <div className="h-3/4 w-10/12 flex items-center">
         <IoIosArrowBack
           size="50"
@@ -82,7 +90,7 @@ const Work = ({ setPage }) => {
           onClick={nextPage}
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
