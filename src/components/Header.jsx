@@ -13,13 +13,25 @@ const Header = () => {
           <a href="mailto:rithik.jain3006@gmail.com">
             <img src={email} alt="Email" height="25px" width="25px" />
           </a>
-          <a href="https://t.me/rithikj">
+          <a
+            href="https://t.me/rithikj"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={telegram} alt="Telegram" height="25px" width="25px" />
           </a>
-          <a href="https://www.linkedin.com/in/rithik-jain-710b3a199/">
+          <a
+            href="https://www.linkedin.com/in/rithik-jain-710b3a199/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={linkedin} alt="LinkedIn" height="25px" width="25px" />
           </a>
-          <a href="https://www.github.com/rithikjain">
+          <a
+            href="https://www.github.com/rithikjain"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={github} alt="GitHub" height="25px" width="25px" />
           </a>
         </div>
