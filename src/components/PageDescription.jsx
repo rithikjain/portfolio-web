@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const PageDescription = ({ pageNo, pageTitle }) => {
   return (
     <motion.div
-      className="w-44 flex flex-col justify-center items-center mb-8"
+      className="w-44 hidden md:flex flex-col justify-center items-center mb-8"
       initial={{ opacity: 0, scale: 0.2, y: "-100vh" }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       transition={{ type: "spring", velocity: 0.1, damping: 12 }}

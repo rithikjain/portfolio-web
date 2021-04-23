@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div>
       <div className="flex items-center justify-between w-11/12 mx-auto py-8">
-        <h1 className="text-2xl font-semibold tracking-wider">RITHIK JAIN</h1>
+        <h1 className="text-lg sm:text-2xl font-semibold tracking-wider">RITHIK JAIN</h1>
         <div className="flex space-x-8">
           <a href="mailto:rithik.jain3006@gmail.com">
             <img src={email} alt="Email" height="25px" width="25px" />
