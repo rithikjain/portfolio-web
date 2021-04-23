@@ -32,7 +32,7 @@ const About = ({ setPage, pageVariants, pageTransition }) => {
       </div>
       <div className="h-full flex-1 hidden xl:flex">
         <div className="flex h-full items-center justify-center">
-          <img src={phone} alt="PhoneImage" width="40%" />
+          <img src={phone} alt="PhoneImage" width="50%" />
         </div>
       </div>
     </motion.div>
