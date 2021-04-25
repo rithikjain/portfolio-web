@@ -38,7 +38,7 @@ function App() {
   };
 
   return (
-    <div className="flex-col flex h-screen">
+    <div className="flex-col flex h-screen overflow-hidden">
       <Header pageNo={pageNo} setPageNo={setPageNo} />
       <div className="flex h-screen main">
         <PageDescription
