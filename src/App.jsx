@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div className="flex-col flex h-screen">
-      <Header />
+      <Header pageNo={pageNo} setPageNo={setPageNo} />
       <div className="flex h-screen main">
         <PageDescription
           key={pageNo}

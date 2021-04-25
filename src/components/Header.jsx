@@ -4,8 +4,12 @@ import linkedin from "../assets/linkedin.svg";
 import telegram from "../assets/telegram.svg";
 import github from "../assets/github.svg";
 import menu from "../assets/menu.svg";
+import Navigation from "../components/Navigation";
+import { useState } from "react";
 
-const Header = () => {
+const Header = ({ pageNo, setPageNo }) => {
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <div>
       <div className="flex items-center justify-between w-11/12 mx-auto py-8">
@@ -44,9 +48,20 @@ const Header = () => {
               <img src={github} alt="GitHub" className="w-4 sm:w-6" />
             </a>
           </div>
-          <img src={menu} alt="Menu" className="w-5 sm:w-7 md:hidden" />
+          <img
+            src={menu}
+            alt="Menu"
+            className="w-5 sm:w-7 md:hidden cursor-pointer"
+            onClick={() => setShowMenu(!showMenu)}
+          />
         </div>
       </div>
+      <Navigation
+        showMenu={showMenu}
+        setShowMenu={setShowMenu}
+        pageNo={pageNo}
+        setPageNo={setPageNo}
+      />
     </div>
   );
 };
