@@ -53,6 +53,7 @@ const Header = ({ pageNo, setPageNo }) => {
             height={12}
             animationDuration={0.3}
             isOpen={showMenu}
+            className="md:hidden"
             menuClicked={() => setShowMenu(!showMenu)}
           />
         </div>
