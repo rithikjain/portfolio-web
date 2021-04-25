@@ -3,9 +3,9 @@ import email from "../assets/email.svg";
 import linkedin from "../assets/linkedin.svg";
 import telegram from "../assets/telegram.svg";
 import github from "../assets/github.svg";
-import menu from "../assets/menu.svg";
 import Navigation from "../components/Navigation";
 import { useState } from "react";
+import HamburgerMenu from "react-hamburger-menu";
 
 const Header = ({ pageNo, setPageNo }) => {
   const [showMenu, setShowMenu] = useState(false);
@@ -48,11 +48,12 @@ const Header = ({ pageNo, setPageNo }) => {
               <img src={github} alt="GitHub" className="w-4 sm:w-6" />
             </a>
           </div>
-          <img
-            src={menu}
-            alt="Menu"
-            className="w-5 sm:w-7 md:hidden cursor-pointer"
-            onClick={() => setShowMenu(!showMenu)}
+          <HamburgerMenu
+            width={20}
+            height={12}
+            animationDuration={0.3}
+            isOpen={showMenu}
+            menuClicked={() => setShowMenu(!showMenu)}
           />
         </div>
       </div>

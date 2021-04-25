@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Navigation = ({ showMenu, setShowMenu, pageNo, setPageNo }) => {
-  const selectedCSS = "my-4 font-extrabold mx-4 cursor-default";
+  const selectedCSS = "my-4 text-xs font-extrabold mx-4 cursor-default";
   const deSelectedCSS =
     "my-4 mx-4 text-xs font-bold text-gray-400 transition duration-300 ease-in-out transform hover:text-gray-700";
 
@@ -10,7 +10,7 @@ const Navigation = ({ showMenu, setShowMenu, pageNo, setPageNo }) => {
     <div
       className={
         showMenu
-          ? "bg-white z-10 flex flex-col w-36 items-center shadow-lg absolute right-0 md:hidden p-3"
+          ? "bg-white z-10 flex flex-col w-36 items-center shadow-md absolute right-0 md:hidden p-3"
           : "hidden"
       }
     >
