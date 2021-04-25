@@ -9,7 +9,7 @@ const ProjectCard = ({ img, title, description, github, website }) => {
         <img src={img} alt="Spike" />
       </div>
       <div className="flex flex-col justify-center w-4/5 lg:w-2/5">
-        <h1 className="font-bold text-5xl">{title}</h1>
+        <h1 className="font-bold text-3xl sm:text-5xl">{title}</h1>
         <div className="bg-black h-1 w-14 ml-1 mt-2"></div>
         <div>
           <p className="ml-1 my-12">{description}</p>
