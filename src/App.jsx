@@ -84,7 +84,7 @@ function App() {
         </div>
 
         {/* Page Selector */}
-        <div className="w-40 hidden sm:flex flex-col justify-center mb-16">
+        <div className="w-40 hidden md:flex flex-col justify-center mb-16">
           <div className="flex flex-col">
             <div className={pageNo === 0 ? selectedCSS : deSelectedCSS}>
               <Link
