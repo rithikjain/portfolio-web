@@ -18,9 +18,9 @@ const About = ({ setPage, pageVariants, pageTransition }) => {
     >
       <div className="flex-1 flex items-center justify-center">
         <div className="ml-0 xl:ml-32 mb-24 w-2/3">
-          <h1 className="text-5xl sm:text-8xl font-bold tracking-wide">Hello</h1>
+          <h1 className="text-4xl sm:text-8xl font-bold tracking-wide">Hello</h1>
           <div className="bg-black h-1 w-12 ml-1 sm:w-24 sm:ml-2 mt-2"></div>
-          <p className="sm:ml-2 mt-8 sm:mt-16 sxm:text-lg">
+          <p className="sm:ml-2 text-base mt-8 sm:mt-16 sm:text-lg">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
