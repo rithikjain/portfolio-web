@@ -3,6 +3,7 @@ import email from "../assets/email.svg";
 import linkedin from "../assets/linkedin.svg";
 import telegram from "../assets/telegram.svg";
 import github from "../assets/github.svg";
+import logo from "../assets/logo.svg";
 import Navigation from "../components/Navigation";
 import { useState } from "react";
 import HamburgerMenu from "react-hamburger-menu";
@@ -13,7 +14,8 @@ const Header = ({ pageNo, setPageNo }) => {
   return (
     <div>
       <div className="flex items-center justify-between w-11/12 mx-auto py-8">
-        <div>
+        <div className="flex items-center">
+          <img src={logo} alt="Logo" className="mr-4 h-5 w-5 sm:h-6 sm:w-6" />
           <h1 className="text-lg hidden sm:flex sm:text-2xl font-semibold tracking-wider">
             RITHIK JAIN
           </h1>
@@ -21,7 +23,7 @@ const Header = ({ pageNo, setPageNo }) => {
             RITHIK
           </h1>
         </div>
-        <div className="flex space-x-14 justify-end items-center">
+        <div className="flex space-x-8 sm:space-x-14 justify-end items-center">
           <div className="flex space-x-4 sm:space-x-8 items-center">
             <a href="mailto:rithik.jain3006@gmail.com">
               <img src={email} alt="Email" className="w-4 sm:w-6" />
