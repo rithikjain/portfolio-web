@@ -16,25 +16,25 @@ const Work = ({ setPage, pageVariants, pageTransition }) => {
       info1:
         "Winuall is a startup based out of Bangalore. It specialises in helping coaching centers go digital.",
       info2:
-        "Worked on some Android thing and blah blah blah was fun and learnt a lot!",
+        "I worked on their student facing app with Kotlin, enhancing the quiz and the document viewing experience.",
     },
     {
-      company: "XYZ",
-      position: "GoLang",
-      duration: "Jul 2020 - Aug 2020",
+      company: "Smoketrees",
+      position: "Freelance",
+      duration: "May 2020 - Dec 2020",
       info1:
-        "Winuall is a startup based out of Bangalore. It specialises in helping coaching centers go digital.",
+        "Smoketrees is the ultimate community of coders, who are dedicated to serving the world. They provide top-class services, in the friendliest manner, maintaining the highest programming standards.",
       info2:
-        "Worked on some Android thing and blah blah blah was fun and learnt a lot!",
+        "Worked on several freelance projects involving frameworks like Flutter, Native Android and GoFiber.",
     },
     {
-      company: "ABC",
-      position: "Kotlin",
-      duration: "Jul 2020 - Aug 2020",
+      company: "Spike",
+      position: "Co-Founder",
+      duration: "Jul 2020 - Present",
       info1:
-        "Winuall is a startup based out of Bangalore. It specialises in helping coaching centers go digital.",
+        "Spike - Best community app for Musicians. It is a short-video community app, where talented individuals can find their own space!",
       info2:
-        "Worked on some Android thing and blah blah blah was fun and learnt a lot!",
+        "Built the complete product from scratch, the mobile app is built using Flutter and the backend is written in Go using GoFiber. Currently leading a tech team of 3 members.",
     },
   ];
 
