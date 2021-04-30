@@ -2,6 +2,12 @@ import React, { useState, useEffect } from "react";
 import ProjectCard from "../components/ProjectCard";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import spike from "../assets/spike.png";
+import sociocredz from "../assets/sociocredz.png";
+import devtalks from "../assets/devtalks.png";
+import qwikscan from "../assets/qwikscan.png";
+import easygists from "../assets/easygists.png";
+import athena from "../assets/athena.png";
+import stylator from "../assets/stylator.png";
 import { motion } from "framer-motion";
 
 const Projects = ({ setPage, pageVariants, pageTransition }) => {
@@ -14,17 +20,62 @@ const Projects = ({ setPage, pageVariants, pageTransition }) => {
       image: spike,
       title: "Spike",
       description:
-        "Spike is a Short Videos App built for artists and creators. Spike uses Spaces to help you find your people that Create and Consume the same content!",
+        "Spike is a Short Videos App built for artists and creators. Spike uses Spaces to help you find your people that Create and Consume the same content! App is built using Flutter. The backend is written in Go with GoFiber as the server framework.",
       github: "https://github.com/ProjectSpike/spike-app",
-      website: "https://spikeapp.in",
+      website:
+        "https://www.youtube.com/watch?v=aIbzdvnoKqA&ab_channel=RithikJain",
     },
     {
-      image: spike,
-      title: "Second Project",
+      image: sociocredz,
+      title: "SocioCredz",
       description:
-        "This is the second project that I have worked on and yeah blah blah and more",
-      github: "https://github.com/ProjectSpike/spike-app",
-      website: "https://spikeapp.in",
+        "Have you ever wanted to do something for the social cause but lacked the time and the means to do it? SocioCredz is built to do just that. SocioCredz will help you to provide education, and food, etc to the people in need without you even spending a single penny from your pocket!",
+      github: "https://github.com/TeamRekursion/sociocredz-app",
+      website: "https://drive.google.com/file/d/1ADXKWPysEPB6LZjiWKGFJSqKI3AAIFFn/view?usp=sharing",
+    },
+    {
+      image: devtalks,
+      title: "DevTalks App",
+      description:
+        "The official app for DevTalks 2020 conducted by DSC-VIT written with Flutter.",
+      github: "https://github.com/rithikjain/devstack-app",
+      website:
+        "https://play.google.com/store/apps/details?id=com.dscvit.devtalks",
+    },
+    {
+      image: stylator,
+      title: "Stylator",
+      description:
+        "This app uses Tensorflow Lite to implement a neural style transfer deep learning model onboard device. You can use this app to apply filters which adapt to the image they have to be apllied on hence giving rise to an artistic photo which is the final product.",
+      github: "https://github.com/rithikjain/neural-style-tflite",
+      website:
+        "https://play.google.com/store/apps/details?id=com.rithikjain.neuralstyletransfer",
+    },
+    {
+      image: qwikscan,
+      title: "QwikScan",
+      description:
+        "A problem we found with the system here in India is that even though people sometimes follow social distancing, but in long queues, lack of patience gets the best of us. Thus, we rarely see people following social distancing on cash counters. This app allows the users to self checkout their cart.",
+      github: "https://github.com/BRO3886/qwikscan",
+      website:
+        "https://www.youtube.com/watch?v=CCXDGFrspcs&ab_channel=SiddharthaVarma",
+    },
+    {
+      image: easygists,
+      title: "Easy Gists",
+      description:
+        "An unofficial mobile client to create, update, delete and view GitHub Gists. The app is written in Kotlin with following the MVVM architecture and uses the Jetpack components.",
+      github: "https://github.com/rithikjain/Gists-App",
+      website: "https://youtu.be/HLjTgNuyEyg",
+    },
+    {
+      image: athena,
+      title: "Athena",
+      description:
+        "A period tracking app with an added functionality to communicate with others also on period in the vicinity and ask for help.",
+      github: "https://github.com/rithikjain/Athena-Periods-Helper",
+      website:
+        "https://drive.google.com/file/d/1jBxwJ4FDmyffZugdyiQBTVStJu7jwbdv/view?usp=sharing",
     },
   ];
 
