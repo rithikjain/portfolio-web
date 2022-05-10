@@ -10,6 +10,33 @@ const Work = ({ setPage, pageVariants, pageTransition }) => {
 
   const workList = [
     {
+      company: "Atom EI",
+      position: "Product Engineering Intern",
+      duration: "Jan 2022 - March 2022",
+      info1:
+        "Worked on the Meditation App which has 500K+ downloads.",
+      info2:
+        "Contributed to the product team by making PRDs and User Journeys.",
+    },
+    {
+      company: "Nearcast",
+      position: "Flutter Developer",
+      duration: "April 2021 - July 2021",
+      info1:
+        "Developed the MVP for Nearcast - A neighbourhood social network.",
+      info2:
+        "Developed a scalable and maintainable codebase. Optimised the app to run smoothly which resulted in low runtime errors as measured by sentry.",
+    },
+    {
+      company: "Spike",
+      position: "Co-Founder",
+      duration: "Jul 2020 - November 2021",
+      info1:
+        "Spike - Best community app for Musicians. It is a short-video community app, where talented individuals can find their own space!",
+      info2:
+        "Built the Flutter App, Backend in Go, Landing Page in React from scratch. Worked on social media and user acquisition too. Led a tech team of 3 members.",
+    },
+    {
       company: "Winuall",
       position: "Android Developer Intern",
       duration: "Jul 2020 - Aug 2020",
@@ -26,16 +53,7 @@ const Work = ({ setPage, pageVariants, pageTransition }) => {
         "Smoketrees is the ultimate community of coders, who are dedicated to serving the world. They provide top-class services, in the friendliest manner, maintaining the highest programming standards.",
       info2:
         "Worked on several freelance projects involving frameworks like Flutter, Native Android and GoFiber.",
-    },
-    {
-      company: "Spike",
-      position: "Co-Founder",
-      duration: "Jul 2020 - Present",
-      info1:
-        "Spike - Best community app for Musicians. It is a short-video community app, where talented individuals can find their own space!",
-      info2:
-        "Built the complete product from scratch, the mobile app is built using Flutter and the backend is written in Go using GoFiber. Currently leading a tech team of 3 members.",
-    },
+    }
   ];
 
   const [currentPage, setCurrentPage] = useState(0);

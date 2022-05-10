@@ -24,7 +24,7 @@ const About = ({ setPage, pageVariants, pageTransition }) => {
           </h1>
           <div className="bg-black h-1 w-12 ml-1 sm:w-24 sm:ml-2 mt-2"></div>
           <p className="sm:ml-1 text-base mt-6 sm:mt-12 sm:text-lg">
-            I'm Rithik. <b className="font-medium">I'm a fullstack developer</b>{" "}
+            I'm Rithik. <b className="font-medium">I'm a mobile fullstack developer with a product mindset</b>{" "}
             with over 2+ years of experiences in a wide range of technologies.
             I'm proficient in App development using{" "}
             <b className="font-medium">Kotlin, Flutter</b> and Backend
