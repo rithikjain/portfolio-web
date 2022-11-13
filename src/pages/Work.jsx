@@ -12,7 +12,7 @@ const Work = ({ setPage, pageVariants, pageTransition }) => {
     {
       company: "FamPay",
       position: "Android Engineering Intern",
-      duration: "Jan 2022 - March 2022",
+      duration: "September 2022 - Present",
       info1:
         "Researched and implemented SSL Pinning in the app",
       info2:
@@ -23,7 +23,7 @@ const Work = ({ setPage, pageVariants, pageTransition }) => {
     {
       company: "Atom EI",
       position: "Product Engineering Intern",
-      duration: "Jan 2022 - March 2022",
+      duration: "January 2022 - March 2022",
       info1:
         "Worked on the Meditation App which has 500K+ downloads.",
       info2:
@@ -32,7 +32,7 @@ const Work = ({ setPage, pageVariants, pageTransition }) => {
     {
       company: "Spike: Community App for Musicians",
       position: "Co-Founder",
-      duration: "Jul 2020 - November 2021",
+      duration: "July 2020 - November 2021",
       info1:
         "Built the Flutter App, Backend in Go, Landing Page in React from scratch. Worked on social media and user acquisition too",
       info2:
@@ -54,7 +54,7 @@ const Work = ({ setPage, pageVariants, pageTransition }) => {
     {
       company: "Winuall",
       position: "Android Developer Intern",
-      duration: "Jul 2020 - Aug 2020",
+      duration: "July 2020 - August 2020",
       info1:
         "Winuall is a startup based out of Bangalore. It specialises in helping coaching centers go digital.",
       info2:
@@ -63,7 +63,7 @@ const Work = ({ setPage, pageVariants, pageTransition }) => {
     {
       company: "Smoketrees",
       position: "Freelance",
-      duration: "May 2020 - Dec 2020",
+      duration: "May 2020 - December 2020",
       info1:
         "Smoketrees is the ultimate community of coders, who are dedicated to serving the world. They provide top-class services, in the friendliest manner, maintaining the highest programming standards.",
       info2:
