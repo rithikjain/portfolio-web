@@ -6,7 +6,7 @@ const ProjectCard = ({ img, title, description, github, website }) => {
   return (
     <div className="h-full flex mb-16 items-center justify-center">
       <div className="hidden lg:flex mr-16 ml-2">
-        <img src={img} alt="" />
+        <img src={img} alt="" width={300} />
       </div>
       <div className="flex flex-col justify-center w-4/5 lg:w-2/5">
         <h1 className="font-bold text-3xl sm:text-3xl">{title}</h1>

@@ -8,6 +8,10 @@ import qwikscan from "../assets/qwikscan.png";
 import easygists from "../assets/easygists.png";
 import athena from "../assets/athena.png";
 import stylator from "../assets/stylator.png";
+import thedolist from "../assets/thedolist.png"
+import werk from "../assets/werk.png"
+import policewatch from "../assets/policewatch.png"
+import yuva from "../assets/yuva.png"
 import { motion } from "framer-motion";
 
 const Projects = ({ setPage, pageVariants, pageTransition }) => {
@@ -16,6 +20,42 @@ const Projects = ({ setPage, pageVariants, pageTransition }) => {
   });
 
   const projectsList = [
+    {
+      image: thedolist,
+      title: "The Do List",
+      description:
+        "A simple, minimalistic NO BS to do list widget, written extirely in Jetpack Glance.",
+      github: "https://github.com/rithikjain/the-do-list",
+      website:
+        "https://play.google.com/store/apps/details?id=in.rithikjain.thedolist&pli=1",
+    },
+    {
+      image: yuva,
+      title: "Project YUVA",
+      description:
+        "An app built with Flutter for adolescents to get their queries answered by medical professionals. Built the mobile app and led a team of 4 developers. In collaboration with CMC, CIF and The Hope House.",
+      github: "https://github.com/GDGVIT/yuva-app-rewrite",
+      website:
+        "https://play.google.com/store/apps/details?id=com.dscvit.yuva",
+    },
+    {
+      image: policewatch,
+      title: "Manipur Police Watch",
+      description:
+        "An app built for the Manipur State Police to track locations of all patrolling officers around the patrolling points in real-time. Integrated Google Maps SDK. Implemented a foreground service to track the officer’s location. MVVM architecture with Hilt for DI, and Firebase for Auth.",
+      github: "https://github.com/rithikjain/police-watch-app",
+      website:
+        "-",
+    },
+    {
+      image: werk,
+      title: "Werk",
+      description:
+        "An app to boost your productivity while having fun with your peers! Implemented a foreground service to run multiple timers in parallel. MVVM architecture with Hilt for DI, used Flow across the app",
+      github: "https://github.com/rithikjain/werk-app",
+      website:
+        "https://play.google.com/store/apps/details?id=com.dscvit.werk",
+    },
     {
       image: spike,
       title: "Spike",
