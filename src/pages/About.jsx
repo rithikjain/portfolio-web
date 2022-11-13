@@ -30,10 +30,10 @@ const About = ({ setPage, pageVariants, pageTransition }) => {
             <b className="font-medium">Kotlin, Flutter</b> and Backend
             development using <b className="font-medium">Go, Node.</b> Also
             really passionate about{" "}
-            <b className="font-medium">entrepreneurship </b>
-            and currently working on my startup:{" "}
+            <b className="font-medium">entrepreneurship. </b>
+            worked on my startup:{" "}
             <b className="font-medium">Spike</b> - Best Community App for
-            Musicians.
+            Musicians in the past.
           </p>
           <p className="sm:ml-1 text-base mt-4 sm:text-lg">
             Fun Fact: I'm a <b className="font-medium">Beatboxer</b> too!

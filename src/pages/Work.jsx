@@ -10,13 +10,35 @@ const Work = ({ setPage, pageVariants, pageTransition }) => {
 
   const workList = [
     {
+      company: "FamPay",
+      position: "Android Engineering Intern",
+      duration: "Jan 2022 - March 2022",
+      info1:
+        "Researched and implemented SSL Pinning in the app",
+      info2:
+        "Implemented UPI disputes and issues resolution mechanism",
+      info3:
+        "Fixed the top occurring bug which affected 1.3K users and caused 1.6K crashes in a span of 7 days",
+    },
+    {
       company: "Atom EI",
       position: "Product Engineering Intern",
       duration: "Jan 2022 - March 2022",
       info1:
         "Worked on the Meditation App which has 500K+ downloads.",
       info2:
-        "Contributed to the product team by making PRDs and User Journeys.",
+        "Used product frameworks like Psych Analysis, DIBB, AARRR, Jobs to be done and also made Product Requirement Docs",
+    },
+    {
+      company: "Spike: Community App for Musicians",
+      position: "Co-Founder",
+      duration: "Jul 2020 - November 2021",
+      info1:
+        "Built the Flutter App, Backend in Go, Landing Page in React from scratch. Worked on social media and user acquisition too",
+      info2:
+        "17000+ lines of code in the Flutter App and 4000+ in the backend",
+      info3: 
+        "Automated the process of building the backend Docker image, sending it to ECR and then deploying it on ECS using GitHub Actions",
     },
     {
       company: "Nearcast",
@@ -25,16 +47,9 @@ const Work = ({ setPage, pageVariants, pageTransition }) => {
       info1:
         "Developed the MVP for Nearcast - A neighbourhood social network.",
       info2:
-        "Developed a scalable and maintainable codebase. Optimised the app to run smoothly which resulted in low runtime errors as measured by sentry.",
-    },
-    {
-      company: "Spike",
-      position: "Co-Founder",
-      duration: "Jul 2020 - November 2021",
-      info1:
-        "Spike - Best community app for Musicians. It is a short-video community app, where talented individuals can find their own space!",
-      info2:
-        "Built the Flutter App, Backend in Go, Landing Page in React from scratch. Worked on social media and user acquisition too. Led a tech team of 3 members.",
+        "Developed a maintainable codebase using Clean Architecture",
+      info3:
+        "Optimised the app to run smoothly which resulted in low runtimeerrors as measured by sentry",
     },
     {
       company: "Winuall",
@@ -96,6 +111,7 @@ const Work = ({ setPage, pageVariants, pageTransition }) => {
                   duration={work.duration}
                   info1={work.info1}
                   info2={work.info2}
+                  info3={work.info3}
                 />
               )}
             </div>
